@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            font-size:10vw;
+        }
+        /*
+        .aberto {background-color: #1a72e6;}
+        .fechado {background-color: #ff5252;}
+    */
+    </style> 
+
+
+</head>
+
+<body id="trocar" onClick="mudarCor()">
+
+
+    <script>
+        var cores = ['red', 'blue'];
+
+        function mudarCor() {
+            var el = document.getElementById('trocar');
+            var proximoIndex = Math.floor(Math.random() * cores.length);
+            var cor = cores[proximoIndex];
+            el.style.backgroundColor = cor;
+        }
+    </script>
+    <center><p>Teste Marcos</p></center>
+
+</body>
+
+</html>
