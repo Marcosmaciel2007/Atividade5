@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
@@ -13,28 +13,41 @@
             font-size: 10vw;
         }
 
-        .aberto {
+        .Aberto {
             background-color: #1a72e6;
         }
 
-        .fechado {
+        .Fechado {
             background-color: #ff5252;
         }
     </style>
 </head>
 
-<body class="fechado" Class="aberto">
+<body class="Fechado">
     <div class="container text-center m-auto p-5">
         <p>Fechado</p>
     </div>
 
-    <!-- <script> 
-        is(fechado){
-            <p>Fechado</p>
-        }else {
-            <p>Aberto</p>
+    <script>
+
+        const paragrafo = document.querySelector('p');
+
+        const body = document.querySelector('body');
+
+        paragrafo.addEventListener('click', mudarColor);
+
+        function mudarColor() {
+            if (body.className == 'Fechado') {
+                body.className = 'Aberto';
+                paragrafo.innerText = 'Aberto';
+            }
+            else {
+                body.className = 'Fechado';
+                paragrafo.innerText = 'Fechado';
+            }
         }
-    </script>-->
+
+    </script>
 </body>
 
 </html>
