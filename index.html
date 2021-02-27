@@ -32,7 +32,7 @@
 
         const paragrafo = document.querySelector('p');
         const body = document.querySelector('body');
-        paragrafo.addEventListener('click', mudarColor);
+        
 
         function mudarColor() {
             if (body.className == 'Fechado') {
@@ -44,7 +44,7 @@
                 paragrafo.innerText = 'Fechado';
             }
         }
-
+        paragrafo.addEventListener('click', mudarColor);
     </script>
 </body>
 
